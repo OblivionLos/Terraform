@@ -14,3 +14,11 @@ https://learn.hashicorp.com/tutorials/terraform/aws-provision
 - All necessary preinstalations
 
 https://learn.hashicorp.com/tutorials/terraform/install-cli
+
+#### Finally you should see something like this
+
+![1](https://github.com/OblivionLos/Terraform/blob/master/Screenshots/2.png)
+
+- Check this link in your browser
+
+![2](https://github.com/OblivionLos/Terraform/blob/master/Screenshots/1.png)
