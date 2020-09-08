@@ -1,0 +1,38 @@
+---
+- name: Install the PHP Repository
+  apt_repository:
+    repo: "ppa:ondrej/php"
+    state: present
+
+- name: Update the Repositories
+  apt:
+    update_cache: yes
+
+- name: Install PHP-FPM
+  apt:
+    pkg:
+      - php-fpm
+      - php-cgi
+      - php-cli
+      - php-curl
+      - php-json
+      - php-odbc
+      - php-tidy
+      - php-common
+      - php-xmlrpc
+      - php-gd
+      - php-pear
+      - php-dev
+      - php-imap
+      - php7.1-mcrypt
+      - php7.4-mysqlnd
+
+- name: Copy the custom settings
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  with_items:
+    - { src: 'www.conf.j2', dest: '/etc/php/7.4/fpm/pool.d/www.conf' }
+    - { src: 'php.ini.j2', dest: '/etc/php/7.4/fpm/php.ini' }
+  notify:
+    - Restart PHP-FPM
