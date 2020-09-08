@@ -17,5 +17,8 @@ variable "aws_key" {
   default = "pl6wikndyoRBVtMAnrfYetZlfhjvLL1YdBwGHvak"
 }
 variable "password" {
-  default = "pepega"
+  default = "foobarbaz"
+}
+variable "default_az" {
+  default = "us-east-2a"
 }
