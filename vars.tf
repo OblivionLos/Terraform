@@ -11,13 +11,13 @@ variable "enable_dns_hostnames" {
   default = "true"
 }
 variable "aws_id" {
-  default = "AKIARW3JDVDEHDFGDDYH"
+  default = " YOUR ID "
 }
 variable "aws_key" {
-  default = "pl6wikndyoRBVtMAnrfYetZlfhjvLL1YdBwGHvak"
+  default = "YOUR SECRET KEY"
 }
 variable "password" {
-  default = "foobarbaz"
+  default = "PASSWORD FOR DATABASE (8 characters)"
 }
 variable "default_az" {
   default = "us-east-2a"
