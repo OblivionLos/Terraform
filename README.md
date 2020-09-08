@@ -11,4 +11,6 @@ https://aws.amazon.com/free/
 
 https://learn.hashicorp.com/tutorials/terraform/aws-provision
 
-- All necessary configs provides in s3 bucket
+- All necessary preinstalations
+
+https://learn.hashicorp.com/tutorials/terraform/install-cli
